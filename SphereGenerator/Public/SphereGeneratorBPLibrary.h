@@ -30,4 +30,7 @@ class USphereGeneratorBPLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintPure, meta = (DisplayName = "GetRadialSphere", Keywords = "SphereGenerator sphere radial generate get GetRadialSphere"), Category = "SphereGenerator")
 	static void getRadialSphere(const float radius, const float divisions, TArray<FVector>& Verticies, TArray<int32>& Triangles);
 
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "GetSquareSphere", Keywords = "SphereGenerator sphere square generate get GetSquareSphere"), Category = "SphereGenerator")
+	static void getSquareSphere(const float radius, const float divisions, TArray<FVector>& Verticies, TArray<int32>& Triangles);
+
 };
